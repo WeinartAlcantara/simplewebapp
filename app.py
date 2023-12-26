@@ -11,11 +11,11 @@ color = os.getenv("COLOR", random_color)
 
 # List of possible messages
 messages = [
-    "Hello from Flask!",
-    "Welcome to Flask App!",
-    "Greetings!",
-    "Flask says hi!",
-    "Enjoy your Flask journey!"
+    "Hello from Weinart!",
+    "Welcome to our simple web App for the CI/CD!",
+    "Greetings, from Shien!",
+    "Lloyd says hi!",
+    "Happy new year!"
 ]
 
 @app.route("/")
