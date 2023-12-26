@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
+    <style>
+        body {
+            background-color: {{ color }};
+            font-family: 'Arial', sans-serif; /* Specify your preferred font-family */
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        p {
+            font-size: 18px; /* Adjust the font size as needed */
+            color: #333;
+        }
+    </style>
 </head>
-<body style="background-color: {{ color }};">
+<body>
     <div>
         <p>{{ message }}</p>
     </div>
