@@ -20,9 +20,7 @@ messages = [
 
 @app.route("/")
 def index():
-    # Select a random message
-    random_message = random.choice(messages)
-    return render_template("index.html", message=random_message, color=color)
+    return render_template("index.html", message=messages, color=color)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5001)
