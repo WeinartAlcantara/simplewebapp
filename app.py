@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
 import os
 
-app = Flask(__name__, template_folder=".")
+app = Flask(__name__, template_folder="templates")
 
 color = os.getenv("COLOR", "#FFFFFF")
 
