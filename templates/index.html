@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
+    <style>
+        body {
+            background-color: {{ color }};
+        }
+    </style>
 </head>
 <body>
-    <div style="background-color: {{ color }}; width: 100px; height: 100px;">
-        Color: {{ color }}
+    <div>
+        <p>{{ message }}</p>
     </div>
-    <p>{{ message }}</p>
 </body>
 </html>
