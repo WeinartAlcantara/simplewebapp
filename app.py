@@ -9,9 +9,20 @@ random_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
 
 color = os.getenv("COLOR", random_color)
 
+# List of possible messages
+messages = [
+    "Hello from Flask!",
+    "Welcome to Flask App!",
+    "Greetings!",
+    "Flask says hi!",
+    "Enjoy your Flask journey!"
+]
+
 @app.route("/")
 def index():
-    return render_template("index.html", message="Hello from Flask!", color=color)
+    # Select a random message
+    random_message = random.choice(messages)
+    return render_template("index.html", message=random_message, color=color)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5001)
