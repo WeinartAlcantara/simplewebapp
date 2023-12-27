@@ -11,11 +11,11 @@ color = os.getenv("COLOR", random_color)
 
 # List of possible messages
 messages = [
-    "Hello from Weinart!",
-    "Welcome to our simple web App for the CI/CD!",
-    "Greetings, from Shien!",
-    "Lloyd says hi!",
-    "Happy new year!"
+    "Hello from Weinartz!",
+    "Welcome to our simple web App for the CI/CDz!",
+    "Greetings, from Shienz!",
+    "Lloyd says hiz!",
+    "Happy new yearz!"
 ]
 
 @app.route("/")
