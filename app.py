@@ -16,6 +16,7 @@ messages = [
     "Canary"
 ]
 
+
 @app.route("/")
 def index():
     random_message = random.choice(messages)
