@@ -5,7 +5,9 @@ import random
 app = Flask(__name__, template_folder="templates")
 
 # Generate a random color
-color = os.getenv("COLOR", random_color)
+random_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+
+color = random_color
 
 # List of possible messages
 messages = [
