@@ -11,7 +11,7 @@ color = os.getenv("COLOR", random_color)
 
 # List of possible messages
 messages = [
-    "Hello from Weinartz!",
+    "Hello from Weinartzz!",
     "Welcome to our simple web App for the CI/CDz!",
     "Greetings, from Shienz!",
     "Lloyd says hiz!",
