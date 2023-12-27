@@ -1,12 +1,27 @@
-from flask import Flask, jsonify, os
+from flask import Flask, render_template
+import os
+import random
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 
-color = os.getenv("COLOR", "#FFFFFF")
+# Generate a random color
+random_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+
+color = random_color
+
+# List of possible messages
+messages = [
+    "Hello from Weinartzz!",
+    "Welcome to our simple web App for the CI/CDz!",
+    "Greetings, from Shienz!",
+    "Lloyd says hiz!",
+    "Happy new yearz!"
+]
 
 @app.route("/")
-def hello():
-    return jsonify({"message": "Hello from Flask!", "color": color})
+def index():
+    random_message = random.choice(messages)
+    return render_template("index.html", message=random_message, color=color)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5001)

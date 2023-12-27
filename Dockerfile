@@ -1,10 +1,20 @@
+# Use an official Python runtime as a parent image
 FROM python:3.8-slim
 
+# Set the working directory to /app
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-COPY . .
+# Install any needed packages specified in requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-CMD ["python", "app.py"]
+# Make port 5000 available to the world outside this container
+EXPOSE 5001
+
+# Define environment variable
+ENV NAME World
+
+# Run Gunicorn with 4 worker processes when the container launches
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5001", "app:app"]
