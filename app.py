@@ -11,11 +11,11 @@ color = random_color
 
 # List of possible messages
 messages = [
-    "Hello from Weinartzz!",
-    "Welcome to our simple web App for the CI/CDz!",
-    "Greetings, from Shienz",
-    "Lloyd says hiz!",
-    "Happy new yearz!"
+    "Canary",
+    "Canary",
+    "Canary",
+    "Canary",
+    "Canary"
 ]
 
 @app.route("/")
