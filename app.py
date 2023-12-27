@@ -9,11 +9,11 @@ random_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
 color = random_color
 
 messages = [
-    "Canary1",
-    "Canary1",
-    "Canary1",
-    "Canary1",
-    "Canary1"
+    "Canary12",
+    "Canary12",
+    "Canary12",
+    "Canary12",
+    "Canary12"
 ]
 
 
