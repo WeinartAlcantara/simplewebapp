@@ -10,7 +10,7 @@ random_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
 color = random_color
 
 # List of possible messages
-messages = [
+messagers = [
     "Hello from Weinartzz!",
     "Welcome to our simple web App for the CI/CDz!",
     "Greetings, from Shienz",
